@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="../static/script.js" type="text/javascript"></script>
+    <script src="../static/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say It With Sweets Page 2: Contact Information</title>
+</head>
+
+<body>
+    <header>
+        <h1> Say It With Sweets! </h1>
+    </header>
+    <div class="navBar">
+        <!-- <input type="checkbox" id="menu">
+            <label for="menu">Menu</label> -->
+        <button id="menuBTN" onclick="showMenu()">Show Menu</button>
+        <a href="contact.html" class="right">Contact + Hours</a>
+        <a href="socialmed.html" class="right">Social Media</a>
+        <a href="index.html" class="right">Home</a>
+    </div>
+    <div class="board">
+        <div id="sidebar">
+            <div id="side">
+                <h4><a href="index.html">Menu / About Us</a></h4>
+                <button class="accordion">Products</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="cakemain.html">Cakes</a></li>
+                        <li><a href="cupcakemain.html">Cupcakes</a></li>
+                        <li><a href="cookiesmain.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <button class="accordion">Bundles</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="cookiebundles.html">Cookie Gift Boxes</a></li>
+                        <li><a href="index.html">Cupcake Bouquets</a></li>
+                    </ul>
+                </div>
+                <button class="accordion">Events/Holidays</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="index.html">Graduation</a></li>
+                        <li><a href="index.html">Fall/Halloween</a></li>
+                        <li><a href="index.html">Thanksgiving</a></li>
+                        <li><a href="index.html">Christmas</a></li>
+                        <li><a href="index.html">New Years</a></li>
+                        <li><a href="index.html">Valentines</a></li>
+                        <li><a href="index.html">Easter</a></li>
+                    </ul> 
+                </div>               
+            </div>
+        </div>
+        <div class="Main2">
+            <div>
+                <!-- <h2>Contact Us!</h2> -->
+                <h1>Hours and Operations:</h1>
+                <h3>All Items Are Order Only. No Walk In Shop</h3>
+                <h3>Please Call 814-937-1564 To Order and Prepay with a Credit Card</h3>
+                <table border="2">
+                    <tr>
+                        <th> Days </th>
+                        <th> Hours </th>
+                    </tr>
+                    <tr>
+                        <td>Monday to Friday</td>
+                        <td>10:00AM to 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>Make An Appointment</td>
+                    </tr>
+
+                </table>
+                <h3> </h3>
+                <h1>Contact Us!</h1>
+                <table border="2">
+                    <tr>
+                        <th>Say It With Sweets</th>
+                        <th>Contact Info</th>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>1306 Pleasant Valley Blvd. Altoona, PA 16602 US</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>814-937-1564</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>info@sayitwithsweets.com</td>
+                    </tr>
+                </table>
+                <h1>Social Media</h1>
+                    <table border="1">
+                        <tr>
+                            <th>Website</th>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.facebook.com/say.it.with.sweets/" target="_blank">Facebook</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.yelp.com/biz/say-it-with-sweets-altoona" target="_blank">Yelp</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.instagram.com/sayitwithsweets11/" target="_blank">Instagram</a></td>
+                        </tr>
+                        <tr>
+                            <td><a
+                                    href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank">Tripadvisor</a>
+                            </td>
+                        </tr>
+
+                    </table>
+            </div>
+                
+                <form action="mailto:info@sayitwithsweets.com" method="post" enctype="text/plain">
+                    <h2>Reach Out and Join Our Mailing List:</h2>
+                    <label for="name"> Your Name (Required): </label>
+                    <input type="text" id="name" required />
+                    <label for="email"> Your Email (Required): </label>
+                    <input type="email" id="email" required />
+                    <label for="phone"> Your Phone Number (Optional): </label>
+                    <input type="number" id="phone" maxlength="10" />
+                    <label for="SMS">Check the box if you wish to recieve SMS Messages</label>
+                    <input type="checkbox" id="SMS">
+                    <label for="zip"> Your Zip-Code (Optional)</label>
+                    <input type="number" id="zip" maxlength="5"/>
+                    <input type="submit" value="Send" onclick="validate()">
+                </form>
+                
+        </div>
+    </div>
+</body>
+
+</html>

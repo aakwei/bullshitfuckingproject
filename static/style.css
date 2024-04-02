@@ -1,0 +1,265 @@
+@font-face {
+  font-family: Italiana,Georgia,Oswald, sans-serif;
+  src: url(../static/Italiana/Italiana-Regular.ttf);
+  src: url(../static/Oswald/static/Oswald-Regular.ttf)
+}
+
+*{
+  box-sizing: border-box;
+  font-family:Italiana, Georgia, Oswald, serif;
+  padding: 5px;
+  margin: 5px;
+}
+
+body {
+  background-color:beige;
+}
+
+header {
+  font-family: Italiana;
+  padding: 10px; /* some padding */
+  text-align: center; /* center the text */
+  background: #670574; /* green background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+header h1 {
+  font-size: 30px;
+  /* background-color: #9D88B2; */
+}
+
+.navBar {
+    overflow: hidden; /* Hide overflow */
+    padding: 10px;
+    background-color: #FFFFFF; /* Dark background color */
+  }
+  
+  /* Style the navigation bar links */
+  .navBar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #3b0342; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+  }
+
+  #menuBTN{
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #3b0342; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  input#menu{
+    display: none;
+  }
+
+
+  
+  /* Right-aligned link */
+.navBar a.right {
+float: right; /* Float a link to the right */
+}
+
+.navBar a:hover{
+  background-color: #CE6DE8;
+}
+
+#menuBTN :hover{
+  color:#CE6DE8;
+}
+
+#socialmediaside1{
+  float:inline-end;
+}
+
+
+#socialmediaside2{
+  float:inline-start;
+}
+  
+.board{
+  display: flex; 
+}
+
+#side {
+  flex: 5%;
+  padding: 20px;
+  background-color: #f4c9fa;
+}
+
+
+.sidebar {
+  display: flex;
+}
+
+.Main1 {
+  flex: 95%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.Main2{
+  /* flex-wrap: wrap; */
+  flex: 95%;
+  padding: 20px;
+  display: flex;
+  font-size: small;
+  background-color: #ffffff;
+}
+
+.Main3 {
+  flex: 95%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.Main4 {
+  flex: 95%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+form *{
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center
+}
+
+.accordion {
+  background-color: #f4c9fa;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: large;
+}
+
+.active, .accordion:hover {
+  background-color:#CE6DE8;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fef6ff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+form{
+  width: 50%;
+}
+  
+.slideshow-container-1 {
+  max-width: 100px;
+}
+
+.slideshow {
+  display:none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container-1 img{
+  max-width: 650px;
+  max-height: 517px;
+}
+
+.slideshow-container-2 img{
+  max-width: 328px;
+  max-height: 301px;
+}
+
+#CustomCookiesDesc{
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.navBar img{
+  max-inline-size: 10%;
+}
